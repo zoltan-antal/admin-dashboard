@@ -7,12 +7,13 @@
   font-family: 'Roboto', sans-serif;
   font-size: 12pt;
   text-decoration: none;
+  list-style-type: none;
 }
 
 body {
   height: 100vh;
   display: grid;
-  grid-template-rows: 180px 1fr;
+  grid-template-rows: auto 1fr;
   grid-template-columns: minmax(200px, 1fr) 5fr;
 }
 
@@ -31,7 +32,6 @@ body {
 .sidebar * {
   color: white;
   font-weight: bold;
-  list-style-type: none;
 }
 
 .sidebar ul {
@@ -71,6 +71,107 @@ body {
 
 .header {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  font-weight: bold;
+  padding: 15px 40px;
+}
+
+.header #header-top-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 150px;
+}
+
+.header #header-top-row .icon {
+  height: 1.4rem;
+}
+
+.header #header-search {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header #header-search a {
+  display: flex;
+  align-items: center;
+}
+
+.header #header-search input {
+  flex-grow: 1;
+  height: 1.7rem;
+  background-color: #E2E8F0;
+  border: none;
+  border-radius: 15px;
+  padding: 0 10px;
+  outline-color: lightgrey;
+  outline-width: 0.5pt;
+  outline-offset: -1px;
+}
+
+.header #header-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.header #header-nav a {
+  color: black
+}
+
+.header #header-nav .profile-picture {
+  height: 2.5rem;
+}
+
+.header #header-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header #header-main {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header #header-main img {
+  height: 4rem;
+}
+
+.header .header-greeting {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.header .header-greeting p {
+  font-size: 0.8rem;
+}
+
+.header .header-greeting h1 {
+  font-size: 1.1rem;
+}
+
+.header #header-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.header #header-buttons a {
+  background-color: #1992d4;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  font-size: 0.9rem;
 }
 
 /* MAIN */
