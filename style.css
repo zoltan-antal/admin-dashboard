@@ -124,7 +124,7 @@ body {
 }
 
 .header #header-nav .profile-picture {
-  height: 2.5rem;
+  height: 2.75rem;
 }
 
 .header #header-bottom-row {
@@ -178,4 +178,136 @@ body {
 
 .main {
   background-color: #e2e8f0;
+  display: flex;
+  gap: 25px;
+  padding: 40px 25px;
+}
+
+.main .icon {
+  height: 1.2rem;
+}
+
+.main h1 {
+  font-size: 1.2rem;
+}
+
+.main p {
+  color: rgb(95, 95, 95);
+}
+
+.card {
+  background-color: white;
+  padding: 35px 30px 25px;
+  border-radius: 10px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-list {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fit, 200px);
+  gap: 25px;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-left: 6px solid #f0b429;
+  /* max-height: 200px; */
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.project-buttons {
+  align-self: flex-end;
+  display: flex;
+  gap: 20px;
+}
+
+.aside {
+  flex-grow: 0;
+  flex-basis: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.announcements {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.announcement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.announcements hr {
+  border-color: #E2E8F0;
+  border-style: solid;
+}
+
+.announcement-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.announcement-item h2 {
+  font-size: 0.9rem;
+}
+
+.announcement-item p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  font-size: 0.8rem;
+}
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.trending img {
+  height: 2.75rem;
+}
+
+.trending-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 20px;
+}
+
+.trending-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.trending-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.trending-tag {
+  font-weight: normal;
 }
